@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jordi Kroon - {% block title %}Home{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="templates/main/css/main.css">
+    <link type="text/css" rel="stylesheet" href="pygments/manni/highlight.css">
+</head>
+<body>
+
+<div id="header">
+    <div id="nav">
+        <div class="container">
+            <a href="auth/login" id="loginButton">Login area</a>
+
+            <div>
+                TODO
+            </div>
+        </div>
+    </div>
+
+    <div id="headerbox">
+        <div class="container">
+            TODO
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="main">
+
+    <div class="container">
+        <h2>{% block contenttitle %}My Projects{% endblock %}</h2>
+        <hr/>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div id="social">
+                <a href="http://github.com/jordi12100">
+                    <img src="templates/main/img/social-github.jpg" title="github"
+                         alt="github profile" width="35" height="35"/>
+                </a>
+                <a href="http://twitter.com/jordi12100">
+                    <img src="templates/main/img/social-twitter.jpg" title="twitter"
+                         alt="twitter profile" width="35" height="35"/>
+                </a>
+                <a href="http://facebook.com/jordi.kroon">
+                    <img src="templates/main/img/social-facebook.jpg"
+                         title="facebook" alt="facebook profile" width="35"
+                         height="35"/>
+                </a>
+            </div>
+            <p>&copy; Copyright {{ now|date('Y') }} - Designed and developed by Jordi Kroon</p>
+        </div>
+    </div>
+</div>
+</body>
 </html>

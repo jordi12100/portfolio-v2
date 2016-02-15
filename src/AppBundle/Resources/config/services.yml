@@ -1,0 +1,7 @@
+app.service.menu:
+  class: AppBundle\Service\MenuService
+  arguments: [@app.mapper.menu]
+
+app.mapper.menu:
+  class: AppBundle\Service\MenuService
+  arguments: [@doctrine.orm.entity_manager]

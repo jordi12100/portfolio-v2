@@ -6,8 +6,10 @@
     <title>Jordi Kroon - {% block title %}Home{% endblock %}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="templates/main/css/main.css">
-    <link type="text/css" rel="stylesheet" href="pygments/manni/highlight.css">
+
+    {% stylesheets 'bundles/design/css/*' filter='cssrewrite'%}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
 </head>
 <body>
 
@@ -43,20 +45,22 @@
         <div class="container">
             <div id="social">
                 <a href="http://github.com/jordi12100">
-                    <img src="templates/main/img/social-github.jpg" title="github"
-                         alt="github profile" width="35" height="35"/>
+                    {% image '@DesignBundle/Resources/public/img/social-github.jpg' %}
+                        <img src="{{ asset_url }}" alt="GitHub profile" title="Github" width="35" height="35"/>
+                    {% endimage %}
                 </a>
                 <a href="http://twitter.com/jordi12100">
-                    <img src="templates/main/img/social-twitter.jpg" title="twitter"
-                         alt="twitter profile" width="35" height="35"/>
+                    {% image '@DesignBundle/Resources/public/img/social-twitter.jpg' %}
+                        <img src="{{ asset_url }}" alt="Twitter profile" title="Twitter" width="35" height="35"/>
+                    {% endimage %}
                 </a>
                 <a href="http://facebook.com/jordi.kroon">
-                    <img src="templates/main/img/social-facebook.jpg"
-                         title="facebook" alt="facebook profile" width="35"
-                         height="35"/>
+                    {% image '@DesignBundle/Resources/public/img/social-facebook.jpg' %}
+                        <img src="{{ asset_url }}" alt="Facebook profile" title="Facebook" width="35" height="35"/>
+                    {% endimage %}
                 </a>
             </div>
-            <p>&copy; Copyright {{ now|date('Y') }} - Designed and developed by Jordi Kroon</p>
+            <p>&copy; Copyright 2016 - Designed and developed by Jordi Kroon</p>
         </div>
     </div>
 </div>

@@ -1,0 +1,16 @@
+@media screen and (max-width: 1000px) {
+    #blogrol {
+        width: 60%;
+    }
+
+    .portfoliotxt {
+        float: none;
+        width: auto;
+        margin-right: 0px;
+    }
+
+    .portfolioimg {
+        margin-left: 20px;
+        height: auto;
+    }
+}

@@ -1,0 +1,160 @@
+@media screen and (max-width: 660px) {
+    #nav .container {
+        text-align: center;
+    }
+
+    #nav a {
+        padding: 10px 9px;
+    }
+
+    #nav a:first-child {
+        padding-left: 0px;
+    }
+
+    #nav a:last-child {
+        padding-right: 0px;
+    }
+
+    #mobilepart {
+        display: none;
+    }
+
+    #loginButton {
+        display: none !important;
+
+    }
+
+    #headerbox {
+        min-height: 50px !important;
+    }
+
+    #introtext {
+        margin-top: 15px !important;
+        font-size: 10pt;
+    }
+
+    #introtext h1 {
+        font-size: 18pt;
+    }
+
+    #introtext a {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border-bottom: 0px;
+    }
+
+    #main h2 {
+        font-size: 20pt;
+    }
+
+    #main hr {
+        width: 200px;
+    }
+
+    #main {
+        padding-top: 20px;
+    }
+
+    .table {
+        margin-top: 0px;
+    }
+
+    #blogrol {
+        max-width: 100%;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .sidebarItem ul li span {
+        display: block;
+        float: left;
+        width: 100%;
+        font-size: 8pt;
+        margin-bottom: 20px;
+    }
+
+    #footer p {
+        font-size: 8pt;
+        padding-top: 10px;
+    }
+
+    #footer p span {
+        display: none !important;
+    }
+
+    .portfolioimg {
+        float: right;
+        margin-left: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .readportfolio, .source {
+        float: right !important;
+        margin-top: 0px;
+
+    }
+
+    .portfoliotxt {
+        float: none;
+        width: 100%;
+    }
+
+    .portfoliotxt p span {
+        display: block;
+        padding-top: 0px !important;
+        clear: both;
+        float: initial !important;
+    }
+
+    .hideMobile {
+        display: none !important;
+    }
+
+    .showMobile {
+        display: block;
+    }
+
+    .blogItem img {
+        max-width: 100px;
+        height: auto;
+        margin-top: -10px;
+    }
+
+    #blogrol {
+        float: none;
+    }
+
+    #blogrol h3 {
+        font-size: 12pt;
+    }
+
+    #blogrol .showMobile {
+        margin-bottom: -25px;
+    }
+
+    #blogrol .showMobile a {
+        font-size: 10pt;
+        margin-right: 10px;
+        color: rgb(18, 116, 191);
+    }
+
+    #blogrol .blogtitle {
+        background-position: 10px 10px;
+
+    }
+
+    #doCommentForm input {
+        margin: 10px 0px;
+        padding: 10px 10px;
+        width: 90%;
+    }
+
+    #doCommentForm textarea {
+        margin: 10px 0px;
+        padding: 10px 10px;
+        width: 90%;
+    }
+}

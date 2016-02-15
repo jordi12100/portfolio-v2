@@ -1,0 +1,45 @@
+@media screen and (max-width: 820px) {
+    #mobilepart {
+        padding-right: 0px !important;
+
+    }
+
+    #mobilepart {
+        background-image: url("../img/mobileSmall.png");
+        background-size: 100%;
+        padding-right: 20px;
+    }
+
+    #blogrol {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #sidebar {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .sidebarItem {
+        text-align: left;
+        float: left;
+        display: inline-block;
+        width: 35%;
+        margin: 20px 20px;
+        min-height: 150px;
+    }
+
+    .sidebarItem h4 {
+        text-align: left;
+    }
+
+    .blogPage {
+        margin: auto;
+        display: block;
+        text-align: center;
+        min-height: 0px;
+        float: none;
+    }
+}

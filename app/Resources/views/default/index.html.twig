@@ -1,5 +1,38 @@
-{% extends 'base.html.twig' %}
+{% extends '::base.html.twig' %}
 
 {% block body %}
-    TODO
+    <div id="header">
+        {% include '::default/menu.html.twig' %}
+        {% include '::default/header.html.twig' %}
+    </div>
+
+    <div id="main">
+        <div class="container">
+            <h2>My Projects</h2>
+            <hr/>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <div id="social">
+                    <a href="http://github.com/jordi12100">
+                        {% image '@DesignBundle/Resources/public/img/social-github.jpg' %}
+                        <img src="{{ asset_url }}" alt="GitHub profile" title="Github" width="35" height="35"/>
+                        {% endimage %}
+                    </a>
+                    <a href="http://twitter.com/jordi12100">
+                        {% image '@DesignBundle/Resources/public/img/social-twitter.jpg' %}
+                        <img src="{{ asset_url }}" alt="Twitter profile" title="Twitter" width="35" height="35"/>
+                        {% endimage %}
+                    </a>
+                    <a href="http://facebook.com/jordi.kroon">
+                        {% image '@DesignBundle/Resources/public/img/social-facebook.jpg' %}
+                        <img src="{{ asset_url }}" alt="Facebook profile" title="Facebook" width="35" height="35"/>
+                        {% endimage %}
+                    </a>
+                </div>
+                <p>&copy; Copyright 2016 - Designed and developed by Jordi Kroon</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

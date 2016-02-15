@@ -4,5 +4,12 @@ services:
         arguments: ['@app.mapper.menu']
 
     app.mapper.menu:
-        class: AppBundle\Service\MenuService
+        class: AppBundle\Mapper\MenuMapper
         arguments: ['@doctrine.orm.entity_manager']
+
+    app.twig.extension.menu:
+        class: AppBundle\Twig\Extension\MenuExtension
+        arguments: ['@app.service.menu']
+        public: false
+        tags:
+            - { name: twig.extension }

@@ -5,6 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ORM\Entity
  * @ORM\Table(name="menu_item")
  */
 class MenuItem
@@ -19,7 +20,7 @@ class MenuItem
     protected $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Model\MenuItem", inversedBy="items")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Menu", inversedBy="items")
      * @ORM\JoinColumn(name="menuId", referencedColumnName="id")
      * @var Menu
      */

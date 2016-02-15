@@ -1,0 +1,12 @@
+<div id="nav">
+    <div class="container">
+        <a href="#" id="loginButton">Login area</a>
+
+        <div>
+            <a href="{{ path('homepage') }}">Home</a>
+            {% for item in getMenuItemsByName('head') %}
+                <a href="{{ item.link|e }}">{{ item.name|e }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

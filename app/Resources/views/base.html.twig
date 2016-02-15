@@ -12,57 +12,6 @@
     {% endstylesheets %}
 </head>
 <body>
-
-<div id="header">
-    <div id="nav">
-        <div class="container">
-            <a href="auth/login" id="loginButton">Login area</a>
-
-            <div>
-                TODO
-            </div>
-        </div>
-    </div>
-
-    <div id="headerbox">
-        <div class="container">
-            TODO
-        </div>
-
-        <div class="clear"></div>
-    </div>
-</div>
-
-<div id="main">
-
-    <div class="container">
-        <h2>{% block contenttitle %}My Projects{% endblock %}</h2>
-        <hr/>
-        {% block body %}{% endblock %}
-    </div>
-
-    <div id="footer">
-        <div class="container">
-            <div id="social">
-                <a href="http://github.com/jordi12100">
-                    {% image '@DesignBundle/Resources/public/img/social-github.jpg' %}
-                        <img src="{{ asset_url }}" alt="GitHub profile" title="Github" width="35" height="35"/>
-                    {% endimage %}
-                </a>
-                <a href="http://twitter.com/jordi12100">
-                    {% image '@DesignBundle/Resources/public/img/social-twitter.jpg' %}
-                        <img src="{{ asset_url }}" alt="Twitter profile" title="Twitter" width="35" height="35"/>
-                    {% endimage %}
-                </a>
-                <a href="http://facebook.com/jordi.kroon">
-                    {% image '@DesignBundle/Resources/public/img/social-facebook.jpg' %}
-                        <img src="{{ asset_url }}" alt="Facebook profile" title="Facebook" width="35" height="35"/>
-                    {% endimage %}
-                </a>
-            </div>
-            <p>&copy; Copyright 2016 - Designed and developed by Jordi Kroon</p>
-        </div>
-    </div>
-</div>
+    {% block body %}{% endblock %}
 </body>
 </html>
